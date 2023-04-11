@@ -1,4 +1,4 @@
-package com.rp.yaji.sec02.assignment;
+package com.rp.yaji.sec02sec04.assignment;
 
 import java.time.Duration;
 import java.util.Random;

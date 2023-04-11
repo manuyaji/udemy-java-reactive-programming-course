@@ -1,4 +1,4 @@
-package com.rp.yaji.sec01.assignment;
+package com.rp.yaji.sec01sec03.assignment;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -72,7 +72,7 @@ public class YajiFileService {
   }
 
   public static void main(String[] args) {
-    File testFile = new File("/Users/myaji/Personal/git/github/udemy-java-reactive-programming-course/sec01-test-file.txt");
+    File testFile = new File("/home/yaji/Personal/git/github/udemy-java-reactive-programming-course/sec01-test-file.txt");
     YajiFileService yajiFileService = new YajiFileService();
     yajiFileService.createAndWriteContent("Om Ganapataye Namah!", testFile, false)
         .onErrorMap(error -> {

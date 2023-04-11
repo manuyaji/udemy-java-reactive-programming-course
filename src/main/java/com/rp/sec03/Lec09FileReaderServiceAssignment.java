@@ -12,7 +12,7 @@ public class Lec09FileReaderServiceAssignment {
 
         FileReaderService readerService = new FileReaderService();
 
-        Path path = Paths.get("src/main/resources/assignment/sec03/file01.txt");
+        Path path = Paths.get("src/main/resources/assignment/sec03sec05/file01.txt");
         readerService.read(path)
                 .map(s -> {
                     Integer integer = Util.faker().random().nextInt(0, 10);
