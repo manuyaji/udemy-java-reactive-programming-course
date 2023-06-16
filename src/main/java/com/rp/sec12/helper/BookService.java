@@ -19,7 +19,7 @@ public class BookService {
 
     public static Mono<String> getBook(){
         return Mono.deferContextual(ctx -> {
-            if(ctx.get("allow")){
+            if((Boolean)ctx.get("allow")){
                 return Mono.just(Util.faker().book().title());
             }else{
                 return Mono.error(new RuntimeException("not-allowed"));
